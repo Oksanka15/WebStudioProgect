@@ -1,0 +1,26 @@
+.menu-btn {
+  @media screen and (max-width: 779px) {
+    position: absolute;
+    top: 10px;
+    margin-left: 85%;
+
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    fill: #212121;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+      fill: #2196f3;
+    }
+  }
+  @media screen and (min-width: 780px) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
