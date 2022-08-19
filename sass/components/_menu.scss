@@ -22,6 +22,7 @@
     position: absolute;
     top: 10px;
     margin-left: 85%;
+    padding: 10px;
 
     align-items: center;
     justify-content: center;
@@ -69,8 +70,8 @@
   background-color: transparent;
 
   
-      &:active {
-      fill: #2196f3;
+  &:active {
+  fill: #2196f3;
   }
 }
 .mobile-link {
@@ -82,9 +83,9 @@
   letter-spacing: 0.02em;
   color: #212121;
   
-  &:active {
-    color: #2196f3;
-  }}
+ }
+.mobile-link:active
+  { color: #2196f3;}
 
 .mobile-items:first-child {
   margin-top: 48px;

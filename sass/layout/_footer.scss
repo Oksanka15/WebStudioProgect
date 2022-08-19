@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-
+  width: 100%;
   background-color: #2f303a;
   padding: 60px 0;
 }
@@ -103,7 +103,7 @@ form {
   margin-right: 93px;
   margin-left: 70px;
 
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
   }
 }
 
