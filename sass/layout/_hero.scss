@@ -1,7 +1,7 @@
 .hero {
   text-align: center;
   margin: 0 auto;
-
+ padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
     url("../images/backround/img@1-back.jpg");
   background-repeat: no-repeat;
@@ -18,6 +18,7 @@
 
 
   @media screen and (min-width: 768px){
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
       url("../images/backround/img@1x-bc-tab.jpg")}
       
@@ -30,6 +31,7 @@
       url("../images/backround/img2@-tab.jpg")
     }
   @media screen and (min-width: 1200px){
+    
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100% ),
     url("../images/backround/img@1bc-desc.jpg")}
 
@@ -43,7 +45,7 @@
   }
 }
 .hero__title {
-  padding-top: 118px;
+ 
   padding-bottom: 30px;
   margin-right: auto;
   margin-left: auto;

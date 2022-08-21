@@ -23,9 +23,7 @@
 
 .list-header {
   @media screen and(max-width: 767px) {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
   }
 
   @media screen and(min-width: 768px) {
@@ -41,16 +39,12 @@
 
 .list-header__link {
   @media screen and(max-width: 767px) {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
   }
 
   @media screen and(min-width: 768px) {
     display: flex;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: initial;
+    
     margin-right: auto;
     gap: 50px;
     font-size: 14px;

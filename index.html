@@ -30,46 +30,44 @@
     <header class="header" data-header>
       <div class="container header__container">
         <a class="link logo" href=""> <span class="logo-cl">Web</span>Studio </a>
-
-        <ul class="list list-header">
-          <li><a class="list-header__link link list-header__link--carrent" href="">Студия</a></li>
-          <li><a class="list-header__link link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="list-header__link link" href="#footer">Контакты</a></li>
-        </ul>
+        <nav class="nav">
+          <ul class="list list-header">
+            <li><a class="list-header__link link list-header__link--carrent" href="">Студия</a></li>
+            <li><a class="list-header__link link" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="list-header__link link" href="#footer">Контакты</a></li>
+          </ul>
+        </nav>
         <button type="button" class="menu-btn" data-menu-open>
           <svg class="menu-button" width="40" height="40">
             <use class="menu-button" href="./images/icons.svg#icon-menu-icon"></use>
           </svg>
         </button>
-        <nav class="nav">
-          <ul class="list nav__list-header">
-            <li>
-              <a class="link nav__link-tel" href="mailto:info@devstudio.com">
-                <svg class="icons-media" width="16" height="12">
-                  <use href="./images/icons.svg#icon-envelope-hover"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link nav__link-tel" href="tel:+380961111111">
-                <svg class="icons-media" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <ul class="list nav__list-header">
+          <li>
+            <a class="link nav__link-tel" href="mailto:info@devstudio.com">
+              <svg class="icons-media" width="14" height="10">
+                <use href="./images/icons.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link nav__link-tel" href="tel:+380961111111">
+              <svg class="icons-media" width="10" height="14">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
-   
     </header>
     <!--контент з кнопкою-->
     <main>
-      <section class="section hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
-            Эффективные&nbsp;решения<br/>
+            Эффективные&nbsp;решения<br />
             для&nbsp;вашего&nbsp;бизнеса
           </h1>
           <button
@@ -687,10 +685,10 @@
           <address class="plase">г. Киев, пр-т Леси Украинки, 26</address>
 
           <ul class="list">
-            <li>
+            <li class="footer-item">
               <a class="link link-tel-foot" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li><a class="link link-tel-foot" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <li class="footer-item"><a class="link link-tel-foot" href="tel:+380991111111">+38 099 111 11 11</a></li>
           </ul>
         </div>
         <div class="form__icons">
@@ -750,27 +748,27 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="form">
-        <form class="form__footer">
-          <p class="form__join form-name">Подпишитесь на рассылку</p>
-          <label class="footer-subs" for="subscription">
-            <input
-              class="footer-input"
-              type="text"
-              name="subscription"
-              value=""
-              id="subscription"
-              placeholder="E-mail"
-            />
-          </label>
-          <button type="submit" class="btn-subm">
-            Подписаться
-            <svg class="icon-icon-send" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
-          </button>
-        </form>
+        <div class="form">  <p class="form__join form-name">Подпишитесь на рассылку</p>
+          <form class="form__footer">
+          
+            <label class="footer-subs" for="subscription">
+              <input
+                class="footer-input"
+                type="text"
+                name="subscription"
+                value=""
+                id="subscription"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="btn-subm">
+              Подписаться
+              <svg class="icon-icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--ModalWindow-->
@@ -858,16 +856,18 @@
         </div>
 
         <ul class="mobile-list list">
-          <li><a class="mobile-tel link" href="tel:0961111111">096 111 11 11</a></li>
-          <li>
+          <li class="mobile-list_mail">
+            <a class="mobile-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile-list_mail">
             <a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
         <ul class="mobile-list--socials list">
-          <li class="mobile-socials">Instagram</li>
-          <li class="mobile-socials">Twitter</li>
-          <li class="mobile-socials">Facebook</li>
-          <li class="mobile-socials">LinkedIn</li>
+          <li class="mobile-socials"><a class="mobile-socials__list" href="">Instagram</a></li>
+          <li class="mobile-socials"><a class="mobile-socials__list" href="">Twitter</a></li>
+          <li class="mobile-socials"><a class="mobile-socials__list" href="">Facebook</a></li>
+          <li class="mobile-socials"><a class="mobile-socials__list" href="">LinkedIn</a></li>
         </ul>
       </div>
     </div>

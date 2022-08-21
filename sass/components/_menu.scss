@@ -10,63 +10,33 @@
   z-index: 100;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
 
 .is-open {
   transform: translateX(0);
 }
 
-.menu-btn {
-  @media screen and(max-width: 767px) {
-    position: absolute;
-    top: 10px;
-    margin-left: 85%;
-    padding: 10px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: fill;
-
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    fill: #212121;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-
-    &:active {
-      fill: #2196f3;
-    }
-  }
-  @media screen and(min-width: 768px) {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
-}
-
 .menu-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  padding: 48px 40px;
 
   max-width: 480px;
-
+  margin: 0 auto;
   height: 100%;
 }
 
 .menu-btn-close {
   position: absolute;
-  top: 20px;
-  margin-left: 85%;
-
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 
   fill: #212121;
@@ -89,16 +59,19 @@
 .mobile-link:active {
   color: #2196f3;
 }
-
-.mobile-items:first-child {
-  margin-top: 48px;
-}
 .mobile-items {
-  margin-top: 32px;
   margin-bottom: 32px;
 }
+
+.mobile-items:last-child {
+  margin-bottom: 0;
+}
+
 .mobile-container {
   margin-bottom: auto;
+}
+.mobile-list_mail:not(:last-child){
+  margin-bottom: 32px;
 }
 .mobile-tel {
   display: flex;
@@ -122,23 +95,22 @@
 
   color: #757575;
 }
-.mobile-socials {
-  text-decoration: none;
+
+.mobile-socials__list{text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
-  color: #2196f3;
-}
+  color: #2196f3;}
 
 .mobile-list--socials {
   display: flex;
   margin-top: 64px;
-  gap: 20px;
+  gap: 10px;
 }
 
-.mobile-socials:not(:last-child).mobile-socials {
-  display: flex;
+.mobile-socials:not(:last-child){
+ 
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

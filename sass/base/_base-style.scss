@@ -8,18 +8,17 @@
     padding-top: 94px;
     padding-bottom: 94px; }
   }
-
+.link.logo{
+  @media screen and(min-width: 1200px) {
+  margin-right: 93px;  }  
+}
 .logo {
-  
-    margin-right: 93px;
- 
     font-family: var(--sekondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #000000;
-  }
+    color: #000000;}
   
   .logo-cl {
     font-family: var(--sekondary-font);
@@ -54,5 +53,5 @@ color: #212121;
  
     text-align: center;
   
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }

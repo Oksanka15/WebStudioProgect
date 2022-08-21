@@ -21,8 +21,9 @@
   margin-top: 20px;
 
   @media screen and (min-width: 768px) {
-    top: 90%;
-
+    
+margin: 0;
+margin-top: 20px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -35,9 +36,7 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 29%;
-    left: 65%;
-    margin: 20px 140px;
-  }
-}
+    margin: 0;
+    margin-top: 0;
+    
+}}

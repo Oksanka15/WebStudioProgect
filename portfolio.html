@@ -23,7 +23,7 @@
     <header class="header" data-header>
       <div class="container header__container">
         <a class="link logo" href=""> <span class="logo-cl">Web</span>Studio </a>
-
+<nav class="nav">
         <ul class="list list-header">
           <li><a class="list-header__link link" href="./index.html">Студия</a></li>
           <li>
@@ -31,12 +31,12 @@
           </li>
           <li><a class="list-header__link link" href="#footer">Контакты</a></li>
         </ul>
-        <button type="button" class="menu-btn" data-menu-open>
+      </nav>
+          <button type="button" class="menu-btn" data-menu-open>
         <svg class="menu-button" width="40" height="40">
           <use class="menu-button" href="./images/icons.svg#icon-menu-icon"></use>
         </svg>
       </button>
-        <nav class="nav">
           <ul class="list nav__list-header">
             <li>
               <a class="link nav__link-tel" href="mailto:info@devstudio.com">
@@ -55,7 +55,7 @@
               >
             </li>
           </ul>
-        </nav>
+      
       </div>
     
     </header>
@@ -846,6 +846,7 @@
       <div class="form">
         <form class="form__footer">
           <p class="form__join form-name">Подпишитесь на рассылку</p>
+          
           <label class="footer-subs" for="subscription">
             <input
               class="footer-input"
@@ -865,6 +866,7 @@
         </form>
       </div>
     </footer>
+
     <div class="menu-overlay" data-menu>
       
       <div class="menu-container">
@@ -885,15 +887,16 @@
       </div>
 
       <ul class="mobile-list list">
-        <li><a class="mobile-tel link" href="tel:0961111111">096 111 11 11</a></li>
-        <li><a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="mobile-list_mail"><a class="mobile-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mobile-list_mail">
+          <a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
       </ul>
-
       <ul class="mobile-list--socials list">
-        <li class="mobile-socials">Instagram</li>
-        <li class="mobile-socials">Twitter</li>
-        <li class="mobile-socials">Facebook</li>
-        <li class="mobile-socials">LinkedIn</li>
+        <li class="mobile-socials"><a class="mobile-socials__list" href="">Instagram</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__list" href="">Twitter</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__list" href="">Facebook</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__list" href="">LinkedIn</a></li>
       </ul>
             </div>
     </div>
