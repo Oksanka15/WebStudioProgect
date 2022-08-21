@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,11 +31,11 @@
           </li>
           <li><a class="list-header__link link" href="#footer">Контакты</a></li>
         </ul>
-        <button class="menu-btn" type="button">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#menu-icon"></use>
-          </svg>
-        </button>
+        <button type="button" class="menu-btn" data-menu-open>
+        <svg class="menu-button" width="40" height="40">
+          <use class="menu-button" href="./images/icons.svg#icon-menu-icon"></use>
+        </svg>
+      </button>
         <nav class="nav">
           <ul class="list nav__list-header">
             <li>
@@ -56,11 +57,7 @@
           </ul>
         </nav>
       </div>
-      <button type="button" class="menu-btn" data-menu-open>
-        <svg class="menu-button" width="40" height="40">
-          <use class="menu-button" href="./images/icons.svg#icon-menu-icon"></use>
-        </svg>
-      </button>
+    
     </header>
     <main>
       <section class="section">
@@ -83,7 +80,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc.webp  1x,
+                        ./images/portfolio/img@1_desc.webp1x,
                         ./images/portfolio/img@2x_desc.webp 2x
                       "
                       type="img/webp"
@@ -91,7 +88,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc.jpg  1x,
+                        ./images/portfolio/img@1_desc.jpg1x,
                         ./images/portfolio/img@2x_desc.jpg 2x
                       "
                       type="img/jpg"
@@ -100,7 +97,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl.webp  1x,
+                        ./images/portfolio/img@1_tabl.webp 1x,
                         ./images/portfolio/img@2x_tabl.webp 2x
                       "
                       type="img/webp"
@@ -108,7 +105,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl.jpg  1x,
+                        ./images/portfolio/img@1_tabl.jpg 1x,
                         ./images/portfolio/img@2x_tabl.jpg 2x
                       "
                       type="img/jpg"
@@ -117,7 +114,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb.webp  1x,
+                        ./images/portfolio/img@1_mb.webp 1x,
                         ./images/portfolio/img@2x_mb.webp 2x
                       "
                       type="img/webp"
@@ -125,7 +122,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb.jpg  1x,
+                        ./images/portfolio/img@1_mb.jpg 1x,
                         ./images/portfolio/img@2x_mb.jpg 2x
                       "
                       type="img/jpg"
@@ -160,7 +157,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-1.webp  1x,
+                        ./images/portfolio/img@1_desc-1.webp 1x,
                         ./images/portfolio/img@2x_desc-1.webp 2x
                       "
                       type="img/webp"
@@ -168,7 +165,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-1.jpg  1x,
+                        ./images/portfolio/img@1_desc-1.jpg 1x,
                         ./images/portfolio/img@2x_desc-1.jpg 2x
                       "
                       type="img/jpg"
@@ -177,7 +174,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-1.webp  1x,
+                        ./images/portfolio/img@1_tabl-1.webp 1x,
                         ./images/portfolio/img@2x_tabl-1.webp 2x
                       "
                       type="img/webp"
@@ -185,7 +182,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-1.jpg  1x,
+                        ./images/portfolio/img@1_tabl-1.jpg 1x,
                         ./images/portfolio/img@2x_tabl-1.jpg 2x
                       "
                       type="img/jpg"
@@ -195,14 +192,14 @@
                       media="(max-width: 767px)"
                       srcset="
                         ./images/portfolio/img@1_mb-1.webp 1x,
-                        ./images/portfolio/img@-1.webp     2x
+                        ./images/portfolio/img@-1.webp 2x
                       "
                       type="img/webp"
                     />
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-1.jpg  1x,
+                        ./images/portfolio/img@1_mb-1.jpg 1x,
                         ./images/portfolio/img@2x_mb-1.jpg 2x
                       "
                       type="img/jpg"
@@ -237,7 +234,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-2.webp  1x,
+                        ./images/portfolio/img@1_desc-2.webp 1x,
                         ./images/portfolio/img@2x_desc-2.webp 2x
                       "
                       type="img/webp"
@@ -245,7 +242,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@2_desc-2.jpg  1x,
+                        ./images/portfolio/img@2_desc-2.jpg 1x,
                         ./images/portfolio/img@2x_desc-2.jpg 2x
                       "
                       type="img/jpg"
@@ -254,7 +251,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@2_tabl-2.webp  1x,
+                        ./images/portfolio/img@2_tabl-2.webp 1x,
                         ./images/portfolio/img@2x_tabl-2.webp 2x
                       "
                       type="img/webp"
@@ -262,7 +259,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@2_tabl-2.jpg  1x,
+                        ./images/portfolio/img@2_tabl-2.jpg 1x,
                         ./images/portfolio/img@2x_tabl-2.jpg 2x
                       "
                       type="img/jpg"
@@ -271,7 +268,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@2_mb-2.webp 1x,
+                        ./images/portfolio/img@2_mb-2.webp1x,
                         ./images/portfolio/img@-2.webp     2x
                       "
                       type="img/webp"
@@ -279,7 +276,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@2_mb-2.jpg  1x,
+                        ./images/portfolio/img@2_mb-2.jpg 1x,
                         ./images/portfolio/img@2x_mb-2.jpg 2x
                       "
                       type="img/jpg"
@@ -314,7 +311,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-3.webp  1x,
+                        ./images/portfolio/img@1_desc-3.webp 1x,
                         ./images/portfolio/img@2x_desc-3.webp 2x
                       "
                       type="img/webp"
@@ -322,7 +319,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-3.jpg  1x,
+                        ./images/portfolio/img@1_desc-3.jpg 1x,
                         ./images/portfolio/img@2x_desc-3.jpg 2x
                       "
                       type="img/jpg"
@@ -331,7 +328,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-3.webp  1x,
+                        ./images/portfolio/img@1_tabl-3.webp 1x,
                         ./images/portfolio/img@2x_tabl-3.webp 2x
                       "
                       type="img/webp"
@@ -339,7 +336,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-3.jpg  1x,
+                        ./images/portfolio/img@1_tabl-3.jpg 1x,
                         ./images/portfolio/img@2x_tabl-3.jpg 2x
                       "
                       type="img/jpg"
@@ -348,7 +345,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-3.webp 1x,
+                        ./images/portfolio/img@1_mb-3.webp1x,
                         ./images/portfolio/img@-3.webp     2x
                       "
                       type="img/webp"
@@ -356,7 +353,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-3.jpg  1x,
+                        ./images/portfolio/img@1_mb-3.jpg 1x,
                         ./images/portfolio/img@2x_mb-3.jpg 2x
                       "
                       type="img/jpg"
@@ -391,7 +388,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-4.webp  1x,
+                        ./images/portfolio/img@1_desc-4.webp 1x,
                         ./images/portfolio/img@2x_desc-4.webp 2x
                       "
                       type="img/webp"
@@ -399,7 +396,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-4.jpg  1x,
+                        ./images/portfolio/img@1_desc-4.jpg 1x,
                         ./images/portfolio/img@2x_desc-4.jpg 2x
                       "
                       type="img/jpg"
@@ -408,7 +405,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-4.webp  1x,
+                        ./images/portfolio/img@1_tabl-4.webp 1x,
                         ./images/portfolio/img@2x_tabl-4.webp 2x
                       "
                       type="img/webp"
@@ -416,7 +413,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-4.jpg  1x,
+                        ./images/portfolio/img@1_tabl-4.jpg 1x,
                         ./images/portfolio/img@2x_tabl-4.jpg 2x
                       "
                       type="img/jpg"
@@ -425,7 +422,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-4.webp 1x,
+                        ./images/portfolio/img@1_mb-4.webp1x,
                         ./images/portfolio/img@-4.webp     2x
                       "
                       type="img/webp"
@@ -433,7 +430,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-4.jpg  1x,
+                        ./images/portfolio/img@1_mb-4.jpg 1x,
                         ./images/portfolio/img@2x_mb-4.jpg 2x
                       "
                       type="img/jpg"
@@ -468,7 +465,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-5.webp  1x,
+                        ./images/portfolio/img@1_desc-5.webp 1x,
                         ./images/portfolio/img@2x_desc-5.webp 2x
                       "
                       type="img/webp"
@@ -476,7 +473,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-5.jpg  1x,
+                        ./images/portfolio/img@1_desc-5.jpg 1x,
                         ./images/portfolio/img@2x_desc-5.jpg 2x
                       "
                       type="img/jpg"
@@ -485,7 +482,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-5.webp  1x,
+                        ./images/portfolio/img@1_tabl-5.webp 1x,
                         ./images/portfolio/img@2x_tabl-5.webp 2x
                       "
                       type="img/webp"
@@ -493,7 +490,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-5.jpg  1x,
+                        ./images/portfolio/img@1_tabl-5.jpg 1x,
                         ./images/portfolio/img@2x_tabl-5.jpg 2x
                       "
                       type="img/jpg"
@@ -502,7 +499,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-5.webp 1x,
+                        ./images/portfolio/img@1_mb-5.webp1x,
                         ./images/portfolio/img@-5.webp     2x
                       "
                       type="img/webp"
@@ -510,7 +507,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-5.jpg  1x,
+                        ./images/portfolio/img@1_mb-5.jpg 1x,
                         ./images/portfolio/img@2x_mb-5.jpg 2x
                       "
                       type="img/jpg"
@@ -545,7 +542,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-6.webp  1x,
+                        ./images/portfolio/img@1_desc-6.webp 1x,
                         ./images/portfolio/img@2x_desc-6.webp 2x
                       "
                       type="img/webp"
@@ -553,7 +550,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-6.jpg  1x,
+                        ./images/portfolio/img@1_desc-6.jpg 1x,
                         ./images/portfolio/img@2x_desc-6.jpg 2x
                       "
                       type="img/jpg"
@@ -562,7 +559,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-6.webp 1x,
+                        ./images/portfolio/img@1_tabl-6.webp1x,
                         /images/portfolio/img@2x_tabl-6.webp 2x
                       "
                       type="img/webp"
@@ -570,7 +567,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-6.jpg  1x,
+                        ./images/portfolio/img@1_tabl-6.jpg 1x,
                         ./images/portfolio/img@2x_tabl-6.jpg 2x
                       "
                       type="img/jpg"
@@ -579,7 +576,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-6.webp 1x,
+                        ./images/portfolio/img@1_mb-6.webp1x,
                         ./images/portfolio/img@-6.webp     2x
                       "
                       type="img/webp"
@@ -587,7 +584,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-6.jpg  1x,
+                        ./images/portfolio/img@1_mb-6.jpg 1x,
                         ./images/portfolio/img@2x_mb-6.jpg 2x
                       "
                       type="img/jpg"
@@ -622,7 +619,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-7.webp  1x,
+                        ./images/portfolio/img@1_desc-7.webp 1x,
                         ./images/portfolio/img@2x_desc-7.webp 2x
                       "
                       type="img/webp"
@@ -630,7 +627,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-7.jpg  1x,
+                        ./images/portfolio/img@1_desc-7.jpg 1x,
                         ./images/portfolio/img@2x_desc-7.jpg 2x
                       "
                       type="img/jpg"
@@ -639,7 +636,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-7.webp  1x,
+                        ./images/portfolio/img@1_tabl-7.webp 1x,
                         ./images/portfolio/img@2x_tabl-7.webp 2x
                       "
                       type="img/webp"
@@ -647,7 +644,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-7.jpg  1x,
+                        ./images/portfolio/img@1_tabl-7.jpg 1x,
                         ./images/portfolio/img@2x_tabl-7.jpg 2x
                       "
                       type="img/jpg"
@@ -656,7 +653,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-7.webp 1x,
+                        ./images/portfolio/img@1_mb-7.webp1x,
                         ./images/portfolio/img@-7.webp     2x
                       "
                       type="img/webp"
@@ -664,7 +661,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-7.jpg  1x,
+                        ./images/portfolio/img@1_mb-7.jpg 1x,
                         ./images/portfolio/img@2x_mb-7.jpg 2x
                       "
                       type="img/jpg"
@@ -700,7 +697,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-8.webp  1x,
+                        ./images/portfolio/img@1_desc-8.webp 1x,
                         ./images/portfolio/img@2x_desc-8.webp 2x
                       "
                       type="img/webp"
@@ -708,7 +705,7 @@
                     <source
                       media="(min-width: 1200px)"
                       srcset="
-                        ./images/portfolio/img@1_desc-8.jpg  1x,
+                        ./images/portfolio/img@1_desc-8.jpg 1x,
                         ./images/portfolio/img@2x_desc-8.jpg 2x
                       "
                       type="img/jpg"
@@ -717,7 +714,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-8.webp  1x,
+                        ./images/portfolio/img@1_tabl-8.webp 1x,
                         ./images/portfolio/img@2x_tabl-8.webp 2x
                       "
                       type="img/webp"
@@ -725,7 +722,7 @@
                     <source
                       media="(min-width: 768px)"
                       srcset="
-                        ./images/portfolio/img@1_tabl-8.jpg  1x,
+                        ./images/portfolio/img@1_tabl-8.jpg 1x,
                         ./images/portfolio/img@2x_tabl-8.jpg 2x
                       "
                       type="img/jpg"
@@ -734,7 +731,7 @@
                     <source
                       media="(max-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-8.webp 1x,
+                        ./images/portfolio/img@1_mb-8.webp1x,
                         ./images/portfolio/img@-8.webp     2x
                       "
                       type="img/webp"
@@ -742,7 +739,7 @@
                     <source
                       media="(maxn-width: 767px)"
                       srcset="
-                        ./images/portfolio/img@1_mb-8.jpg  1x,
+                        ./images/portfolio/img@1_mb-8.jpg 1x,
                         ./images/portfolio/img@2x_mb-8.jpg 2x
                       "
                       type="img/jpg"
@@ -869,13 +866,14 @@
       </div>
     </footer>
     <div class="menu-overlay" data-menu>
+      
       <div class="menu-container">
-        <button class="menu-btn-close"  type="button"  >
+        <button class="menu-btn-close"  type="button">
           <svg data-menu-close class="menu-button" width="19" height="19">
             <use class="menu-button" href="./images/icons.svg#icon-close-menu"></use>
           </svg>
         </button>
-      </div>
+
       <div class="mobile-container">
         <ul class="mobile-list list">
           <li class="mobile-items"><a class="mobile-link link" href="/index.html">Студия</a></li>
@@ -890,12 +888,14 @@
         <li><a class="mobile-tel link" href="tel:0961111111">096 111 11 11</a></li>
         <li><a class="mobile-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
       </ul>
+
       <ul class="mobile-list--socials list">
         <li class="mobile-socials">Instagram</li>
         <li class="mobile-socials">Twitter</li>
         <li class="mobile-socials">Facebook</li>
         <li class="mobile-socials">LinkedIn</li>
       </ul>
+            </div>
     </div>
 
     <script src="./js/modal.js"></script>

@@ -1,9 +1,10 @@
-.nav__list-header {@media screen and (max-width: 767px){
+.nav__list-header {
+  @media screen and(max-width: 767px){
   opacity: 0;
   visibility: hidden;
   pointer-events: none;}
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
 
     opacity: 1;
     visibility: visible;
@@ -14,7 +15,7 @@
 
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     gap: 30px;
     flex-direction: row;
 
@@ -22,13 +23,13 @@
 }
 
 .nav__link-tel {
-  @media screen and (max-width: 767px) {
+  @media screen and(max-width: 767px) {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     
     opacity: 1;
     visibility: visible;

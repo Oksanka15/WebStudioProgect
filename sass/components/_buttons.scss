@@ -50,12 +50,15 @@
 }
 
 .container-btn {
- 
+
   display: flex;
+  flex-basis: 450px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-   @media screen and(min-width:768px){
+
+  @media screen and(min-width:768px){
     flex-wrap: nowrap;
+    flex-basis: 631px;
 }}

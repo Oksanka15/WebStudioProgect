@@ -2,7 +2,9 @@
   position: relative;
   width: 100%;
   background-color: #2f303a;
-  padding: 60px 0;}
+  padding: 60px 0;
+
+}
 
 .plase {
   text-align: center;
@@ -86,7 +88,7 @@ form {
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width: 1200px) {
     margin-left: 93px;
     flex-direction: row;
   }
@@ -102,8 +104,6 @@ form {
   margin-right: 93px;
   margin-left: 70px;
 
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .footer-items {
@@ -175,7 +175,7 @@ form {
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 60px;
-    right: 25%;
+    left: 50%;
     align-items: flex-start;
   }
 }

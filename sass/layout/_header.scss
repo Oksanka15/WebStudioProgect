@@ -13,22 +13,22 @@
 .header__container {
   position: relative;
   display: flex;
-    align-items: center;
-min-height: 60px;
+  align-items: center;
+  min-height: 60px;
 
-@media screen and (min-width: 768px) {
+@media screen and(min-width: 768px) {
 
   max-height: 80px;}}
 
 
 .list-header {
-  @media screen and (max-width: 767px) {
+  @media screen and(max-width: 767px) {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     display: flex;
     margin-right: auto;
     gap: 50px;
@@ -40,13 +40,13 @@ min-height: 60px;
 }
 
 .list-header__link {
-  @media screen and (max-width: 767px) {
+  @media screen and(max-width: 767px) {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     display: flex;
     opacity: 1;
     visibility: visible;
@@ -70,7 +70,7 @@ min-height: 60px;
 }
 
 .list-header__link--carrent {
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width: 768px) {
     position: relative;
     color: var(--akcent-color);
 
