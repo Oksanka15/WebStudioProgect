@@ -37,6 +37,11 @@ section {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .link.logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .link.logo {
     margin-right: 93px;
